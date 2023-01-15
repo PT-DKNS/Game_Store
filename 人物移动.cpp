@@ -1,6 +1,7 @@
 #include <graphics.h>
 #include <time.h>
 #include <conio.h>
+#define SPEED 8
 
 struct People {
 	int x;
@@ -10,7 +11,7 @@ struct People {
 	int towards;
 };
 
-struct People man = { 300,300,8,8,1 };
+struct People man = { 300,300,SPEED,SPEED,1 };
 
 int Timer(int duration, int id) {
 	static int startTime[10];
